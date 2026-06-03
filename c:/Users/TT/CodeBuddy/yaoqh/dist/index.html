@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="本真大陆之寻香邀请函：游戏人生之旅，西藏藏香站，8天7夜真实世界英雄之旅。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="本真大陆" />
+    <meta property="og:title" content="本真大陆之寻香邀请函" />
+    <meta
+      property="og:description"
+      content="游戏人生之旅 · 西藏藏香站｜8天7夜沉浸式冒险，抽出你的专属职业卡片。"
+    />
+    <meta property="og:url" content="https://okindi.github.io/benzhen-xiang-invitation/" />
+    <meta property="og:image" content="https://okindi.github.io/benzhen-xiang-invitation/images/og-card.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="本真大陆之寻香邀请函" />
+    <meta
+      name="twitter:description"
+      content="游戏人生之旅 · 西藏藏香站｜8天7夜沉浸式冒险，抽出你的专属职业卡片。"
+    />
+    <meta name="twitter:image" content="/images/og-card.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400&family=ZCOOL+XiaoWei&display=swap"
+      rel="stylesheet"
+    />
+    <title>本真大陆之寻香邀请函</title>
+    <script type="module" crossorigin src="/assets/index-MBtX9vfh.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-yqbuohjK.css">
+  </head>
+  <body>
+    <svg class="svg-filters" aria-hidden="true" focusable="false">
+      <filter id="mineral-grain">
+        <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="4" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" xChannelSelector="R" yChannelSelector="G" />
+      </filter>
+    </svg>
+
+    <canvas id="experience" aria-hidden="true"></canvas>
+    <div class="paper-grain" aria-hidden="true"></div>
+    <div class="dust-overlay" aria-hidden="true"></div>
+
+    <div class="plateau-scene" aria-hidden="true">
+      <div class="sky-wash"></div>
+      <svg class="mountain-line mountain-line-back" viewBox="0 0 1400 460" preserveAspectRatio="none">
+        <path d="M0 320 L150 210 L260 280 L390 150 L540 292 L690 170 L810 265 L955 120 L1120 292 L1240 205 L1400 315" />
+      </svg>
+      <svg class="mountain-line mountain-line-front" viewBox="0 0 1400 460" preserveAspectRatio="none">
+        <path d="M0 360 L110 300 L220 338 L360 230 L470 338 L595 252 L720 346 L865 210 L1030 346 L1160 280 L1400 360" />
+      </svg>
+      <div class="prayer-flags">
+        <span class="flag blue"></span><span class="flag white"></span><span class="flag red"></span>
+        <span class="flag green"></span><span class="flag gold"></span><span class="flag blue"></span>
+        <span class="flag white"></span><span class="flag red"></span><span class="flag green"></span><span class="flag gold"></span>
+      </div>
+    </div>
+
+    <div class="progress" aria-hidden="true"><span></span></div>
+    <nav class="chapter-nav" aria-label="章节进度">
+      <a href="#invite" data-jump="1">1</a>
+      <a href="#awake" data-jump="2">2</a>
+      <a href="#mission" data-jump="3">3</a>
+      <a href="#journey" data-jump="4">4</a>
+      <a href="#transform" data-jump="5">5</a>
+      <a href="#return" data-jump="6">6</a>
+    </nav>
+
+    <button class="sound-note" type="button" aria-label="沉浸提示">
+      <span class="sound-icon">ॐ</span>
+      <span>请慢一点读<br />让画面先抵达你</span>
+    </button>
+
+    <main class="story">
+      <section class="story-frame hero-frame" id="invite" data-chapter="1" data-scene="invite">
+        <img
+          src="/images/tibet-hero.png"
+          alt="西藏雪山"
+          class="scene-art full-bleed"
+          data-ai-prompt="手绘唐卡风格，雪山，羊皮纸质感，矿物颜料，金色描边，明亮色调，无文字"
+        />
+        <div class="title-card">
+          <p class="eyebrow">Chapter 1 · 邀请函</p>
+          <h1>本真大陆之寻香邀请函</h1>
+          <p class="subtitle">游戏人生之旅 · 西藏藏香站</p>
+          <svg class="ink-line" viewBox="0 0 620 84" aria-hidden="true">
+            <path d="M8 52 C92 14 154 76 242 38 S405 24 500 56 S590 40 612 28" />
+          </svg>
+          <button class="start" type="button" data-start>启程</button>
+        </div>
+      </section>
+
+      <section class="story-frame image-frame letter-arrives" data-chapter="1" data-scene="invite">
+        <img
+          src="/images/tibet-letter.png"
+          alt="西藏来信"
+          class="letter-object"
+          data-ai-prompt="手绘唐卡风格，一封来自西藏的空白邀请信，羊皮纸质感，金色描边，经幡和雪山，无文字"
+        />
+        <p class="narration letter-text letter-text-a">风从远方来</p>
+        <p class="narration letter-text letter-text-b">信落在掌心</p>
+      </section>
+
+      <section class="story-frame white-space" id="awake" data-chapter="2" data-scene="awake">
+        <p class="solo-line">你有没有过这样的时刻？</p>
+      </section>
+
+      <section class="story-frame image-frame city-cage" data-chapter="2" data-scene="awake">
+        <img
+          src="/images/city-to-plateau.png"
+          alt="高原召唤"
+          class="scene-art full-bleed awake-panorama"
+          data-ai-prompt="手绘唐卡风格，从城市剪影过渡到雪山草原，经幡飘动，明亮色彩，无文字"
+        />
+        <div class="city-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="awake-copy">
+          <p class="awake-routine awake-text-a" aria-label="起床，上课，作业，考试">
+            <span>起床</span><span>上课</span><span>作业</span><span>考试</span>
+          </p>
+          <p class="awake-question awake-text-b">
+            <span>在风打开之前</span>
+            <strong>人生只有这一条路吗</strong>
+          </p>
+        </div>
+      </section>
+
+      <section class="story-frame white-space" data-chapter="2" data-scene="awake">
+        <p class="solo-line small">有一个地方 不急着给你答案</p>
+      </section>
+
+      <section class="story-frame image-frame mission-tree" id="mission" data-chapter="3" data-scene="mission">
+        <img
+          src="/images/life-tree.png"
+          alt="生命成长树"
+          class="scene-art tree-art"
+          data-ai-prompt="手绘唐卡风格生命树，根系扎入大地，枝叶连接天空，金色描边，矿物颜料质感，无文字"
+        />
+        <div class="panel-caption left">
+          <p class="eyebrow">Chapter 3 · 使命</p>
+          <h2>这一站，我们在西藏林芝</h2>
+        </div>
+        <svg
+          class="growth-tree"
+          viewBox="0 0 420 520"
+          data-ai-prompt="SVG路径，手绘唐卡风格的生命树，根系扎入大地，枝叶连接天空，金色描边，矿物颜料质感"
+          aria-label="生命成长树"
+        >
+          <path d="M210 462 C208 380 220 310 210 236 C200 164 210 94 210 40" />
+          <path d="M210 260 C160 244 128 210 100 154" />
+          <path d="M212 244 C260 220 300 176 340 96" />
+          <path d="M210 340 C166 320 108 334 62 378" />
+          <path d="M212 332 C266 318 322 336 374 388" />
+          <path d="M210 462 C170 476 128 486 84 506" />
+          <path d="M210 462 C250 476 292 486 336 506" />
+          <circle cx="210" cy="40" r="18" />
+          <circle cx="100" cy="154" r="14" />
+          <circle cx="340" cy="96" r="14" />
+          <circle cx="62" cy="378" r="12" />
+          <circle cx="374" cy="388" r="12" />
+        </svg>
+      </section>
+
+      <section class="story-frame white-space" data-chapter="3" data-scene="mission">
+        <p class="solo-line">你将成为一名「寻香使」</p>
+      </section>
+
+      <section class="story-frame comic-info" data-chapter="3" data-scene="mission">
+        <article class="comic-panel large">
+          <h2>沿着林芝的山水脉络</h2>
+          <p>收集 10 种带着天地能量的「灵魂香料」调和出只属于你的生命之香</p>
+        </article>
+      </section>
+
+      <section class="story-frame route-map" id="journey" data-chapter="4" data-scene="journey">
+        <div class="route-comic-grid" aria-label="林芝研学路线分镜">
+          <figure class="route-comic-panel route-comic-main">
+            <img
+              src="/images/linzhi-route-map.png"
+              alt="林芝到雅鲁藏布大峡谷路线"
+              data-ai-prompt="手绘唐卡风格路线地图，林芝、鲁朗、波密、雅鲁藏布大峡谷，金色路线穿过雪山森林峡谷，矿物颜料，羊皮纸留白，无文字"
+            />
+          </figure>
+          <figure class="route-comic-panel route-comic-small route-linzhi">
+            <img src="/images/route-linzhi.png" alt="林芝" data-optional-layer />
+            <figcaption>林芝</figcaption>
+          </figure>
+          <figure class="route-comic-panel route-comic-small route-lulang">
+            <img src="/images/route-lulang.png" alt="鲁朗" data-optional-layer />
+            <figcaption>鲁朗</figcaption>
+          </figure>
+          <figure class="route-comic-panel route-comic-small route-bomi">
+            <img src="/images/route-bomi.png" alt="波密" data-optional-layer />
+            <figcaption>波密</figcaption>
+          </figure>
+          <figure class="route-comic-panel route-comic-small route-canyon">
+            <img src="/images/route-canyon.png" alt="雅鲁藏布大峡谷" data-optional-layer />
+            <figcaption>雅鲁藏布</figcaption>
+          </figure>
+          <p class="narration route-text">8 天 7 夜</p>
+          <div class="route-line" aria-hidden="true">
+            <span>林芝</span><i></i><span>鲁朗</span><i></i><span>波密</span><i></i><span>雅鲁藏布大峡谷</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-frame white-space" data-chapter="4" data-scene="journey">
+        <p class="solo-line">每天都有新的剧情触发</p>
+      </section>
+
+      <section class="story-frame comic-info triple" data-chapter="4" data-scene="journey">
+        <img
+          src="/images/adventure-storyboard.png"
+          alt="综艺式冒险分镜"
+          class="scene-art panel-bg"
+          data-ai-prompt="手绘唐卡风格研学冒险分镜，少年在高原村落寻找线索，经幡，森林，雪山，无文字"
+        />
+        <article class="comic-panel"><span>01</span><h3>综艺式沉浸冒险</h3><p>隐藏支线、NPC 互动和只属于你们的名场面。</p></article>
+        <article class="comic-panel"><span>02</span><h3>商业实战</h3><p>采集原料、设计产品，把故事变成真实创造。</p></article>
+        <article class="comic-panel"><span>03</span><h3>生命成长</h3><p>团队闯关、个人秘密任务、每日复盘。</p></article>
+      </section>
+
+      <section class="story-frame image-frame craft-scene" id="transform" data-chapter="5" data-scene="transform">
+        <div class="layered-scene craft-layered" aria-hidden="true">
+          <img
+            src="/images/incense-bg.png"
+            alt=""
+            class="depth-layer depth-base"
+            data-ai-prompt="横向全屏手绘唐卡风格藏香制作场景，右侧人物制香，左侧大面积羊皮纸留白，远处雪山经幡，矿物颜料，金色描边，明亮开阔，无文字"
+          />
+        </div>
+        <div class="cinema-copy craft-copy">
+          <p class="narration craft-text-a">有些礼物<br />看得见</p>
+          <p class="narration craft-text-b">有些能力<br />会跟你一辈子</p>
+        </div>
+      </section>
+
+      <section class="story-frame comic-info triple" data-chapter="5" data-scene="transform">
+        <img
+          src="/images/gifts-still-life.png"
+          alt="带走的礼物"
+          class="scene-art panel-bg"
+          data-ai-prompt="手绘唐卡风格静物，生命之香，成长手册，香料种子，经幡碎片，羊皮纸，无文字"
+        />
+        <article class="comic-panel"><h3>生命之香</h3><p>你亲手调和出的作品。</p></article>
+        <article class="comic-panel"><h3>成长手册</h3><p>记录每一次选择和突破。</p></article>
+        <article class="comic-panel"><h3>商业能力</h3><p>表达、协作、观察、创造、交换价值。</p></article>
+      </section>
+
+      <section class="story-frame white-space" data-chapter="5" data-scene="transform">
+        <p class="solo-line small">最重要的是 一个更勇敢更真实的自己</p>
+      </section>
+
+      <section class="story-frame final-frame" id="return" data-chapter="6" data-scene="return">
+        <div class="identity-draw">
+          <div class="draw-card" data-draw-card data-ai-prompt="手绘唐卡风格卡背，曼陀罗，经幡，雪山，羊皮纸质感，金色描边，身份抽卡悬念感，无文字">
+            <div class="draw-card__back" aria-hidden="true"></div>
+            <div class="draw-card__front">
+              <p class="eyebrow">Chapter 6 · 归来</p>
+              <h2 data-result-title>寻香使招募令</h2>
+              <p data-result-copy>滑开这张身份牌，听见本真大陆给你的第一声召唤。</p>
+              <div class="card-line"><span>身份</span><strong data-result-role>未揭晓</strong></div>
+              <div class="card-line"><span>任务</span><strong data-result-trait>等待你的选择</strong></div>
+            </div>
+            <div class="draw-card__veil" data-card-veil>
+              <span>抽身份</span>
+              <i data-card-handle>滑动揭开</i>
+            </div>
+          </div>
+
+          <div class="identity-quiz" data-quiz-panel hidden>
+            <p class="quiz-kicker">五个选择，抽出你的冒险职业</p>
+            <h3 data-question-title>你最先被什么吸引？</h3>
+            <div class="quiz-options" data-question-options></div>
+            <div class="quiz-progress" data-quiz-progress aria-label="答题进度"></div>
+          </div>
+
+          <div class="identity-result" data-result-panel hidden>
+            <p>你已经在别人的剧本里演得太久，这一次，轮到你写自己的故事。</p>
+            <button class="cta career-generate" type="button" data-generate-career-card>生成职业卡片</button>
+          </div>
+
+          <div class="career-card-stage" data-career-card-stage hidden>
+            <img class="career-card-image" data-career-card alt="职业卡片" />
+            <a
+              class="adventure-link"
+              data-adventure-link
+              href="https://www.wjx.top/vm/tU5c8CF.aspx#"
+              target="_blank"
+              rel="noreferrer"
+            >登记冒险者</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>
